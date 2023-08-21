@@ -145,7 +145,8 @@ for (GENE_NAME in unique(gene_names)) {
   all_dif_max <- c(all_dif_max, dif_max)
   all_dif_min <- c(all_dif_min, dif_min)
 }
-
+                     
+print("testing")
 outname <- paste0(opt$outfile, "_", opt$feature, ".png")
 
 png(outfile, width = 6, height = 6, units = "in", res = 300)
