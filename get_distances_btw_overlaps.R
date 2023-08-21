@@ -147,6 +147,9 @@ for (GENE_NAME in unique(gene_names)) {
 }
                      
 print("testing")
+print(opt$outfile)
+print(typeof(opt$outfile))
+                     
 outname <- paste0(opt$outfile, "_", opt$feature, ".png")
 
 png(outfile, width = 6, height = 6, units = "in", res = 300)
