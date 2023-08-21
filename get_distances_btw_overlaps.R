@@ -152,7 +152,7 @@ print(typeof(opt$outfile))
                      
 outname <- paste0(opt$outfile, "_", opt$feature, ".png")
 
-png(outfile, width = 6, height = 6, units = "in", res = 300)
+png(outname, width = 6, height = 6, units = "in", res = 300)
 par(mfrow = c(1, 2))
 data_hist1 <- hist(all_dif_min, plot = FALSE)
 hist(all_dif_min, 
